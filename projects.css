@@ -1,0 +1,84 @@
+.projects-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-group a {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  margin: 5px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-group a:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Unique card colors */
+.project-one {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.project-two {
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+}
+
+.project-three {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
